@@ -1,0 +1,332 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f7; 
+    color: #333;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: #d98aa7; 
+}
+
+a:hover {
+    color: #c76c8f; 
+}
+
+.container { 
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background: #fff;
+    color: #333;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: 3px solid #e8c8d4; 
+}
+
+header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    color: #d98aa7;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header ul li a {
+    color: #555;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul li a:hover {
+    color: #d98aa7;
+}
+
+
+/* Seção Hero (Página Inicial) */
+.hero {
+    background: url('imagens/banner-bebe-reborn.jpg') no-repeat center center/cover; 
+    background-color: #e8c8d4; 
+    color: #fff;
+    min-height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.btn-cta {
+    display: inline-block;
+    background: #d98aa7;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: #c76c8f;
+    color: #fff;
+}
+
+/* Seções Gerais */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #b36b82; 
+}
+
+/* Cards de Produto (Destaques e Vitrine) */
+.container-destaques, .grid-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.produto-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 40px); 
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.produto-card img {
+    max-width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.produto-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.produto-card .preco {
+    font-size: 1.2em;
+    color: #d98aa7;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.produto-card .descricao-curta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    min-height: 40px; 
+}
+
+.btn-ver-mais, .btn-comprar {
+    display: inline-block;
+    background: #b36b82;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver-mais:hover, .btn-comprar:hover {
+    background: #9f536c;
+    color: #fff;
+}
+
+/* Seção Sobre Nós e Contato */
+.sobre-nos, .contato {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+/* Filtros (Página de Produtos) */
+.filtros {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.filtros label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filtros select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0 0 10px 0;
+}
+
+footer .redes-sociais a {
+    color: #e8c8d4; 
+    margin: 0 10px;
+}
+
+footer .redes-sociais a:hover {
+    color: #fff;
+}
+#bebemenina {
+    display: flex;
+    background-color: #fce4ec;
+    color: #880e4f; 
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+#bebemenino {
+    display: flex;
+    background-color: #95b7d3; 
+    color: #880e4f; 
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.menu{ 
+    background-color: #f7f3f3;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+
+
+/* Media Queries para Responsividade (Exemplo Básico) */
+@media (max-width: 992px) {
+    .produto-card {
+        width: calc(50% - 30px); 
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .logo {
+        margin-bottom: 10px;
+    }
+    header ul {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    header ul li {
+        display: block;
+        padding: 5px 0;
+    }
+    header .carrinho {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+
+    .produto-card {
+        width: calc(100% - 20px); 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-destaques, .grid-produtos {
+        padding: 0 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-cta {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+}
